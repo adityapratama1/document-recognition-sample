@@ -3,7 +3,10 @@ this project use ZXing camera library.
 
 A sample ZXing application is available in [Releases](https://github.com/journeyapps/zxing-android-embedded/releases).
 
-## <a name="how_to_add_documentrecognition_library_to_your_project"></a> How to add DocumentRecognition library to your project
+
+## Adding aar dependency with Gradle
+
+From version 3.6.0, only Android SDK 19+ is supported by default.
 
 Download the aar file from our website ..., import aar file to folder `src\main\libs`. To install them, simply add the following lines to your project `build.gradle`.
 
@@ -42,6 +45,23 @@ protected void onActivityResult(int requestCode, int resultCode, @Nullable Inten
 }
 ```    
 
+## DocumentResults
+* `lines` (MRZ lines)
+* `docType`
+* `country`
+* `surName`
+* `givenName`
+* `docNumber`
+* `docCheckSum`
+* `nationality`
+* `birth`
+* `birthCheckSum`
+* `sex`
+* `expirationDate`
+* `expirationCheckSum`
+* `personalNumber`
+* `personalNumberCheckSum`
+* `secondRowSheckSum`
 
 ## License
 

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.scan_button){
-            DocumentRecognition document = new DocumentRecognition(this, "pRBXmfpd59w EvoUSGN5FsWLNfxi4CN g3jps4sHdIV1");
+            DocumentRecognition document = new DocumentRecognition(this, "qSCXngqe59xaEwpVSHO5FtWLNgyj4DNah3kqt4tIeJV1qsieRybSsq9dSNKW");
             document.initiateScan();
         }
     }

@@ -31,6 +31,18 @@ DocumentRecognition document = new DocumentRecognition(context, YOUR_LICENSE_KEY
 document.initiateScan();
 ```
 
+### Get Result while scanning
+
+```java
+@Override
+protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+     DocumentResults results = DocumentRecognition.parseActivityResult(requestCode,resultCode,data);
+     Toast.makeText(this, results.getLines(), Toast.LENGTH_LONG).show();
+     super.onActivityResult(requestCode, resultCode, data);
+}
+```    
+
+
 ## License
 
 Licensed under the [Apache License 2.0][7]
